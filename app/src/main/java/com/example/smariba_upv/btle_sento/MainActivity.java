@@ -457,7 +457,7 @@ public class MainActivity extends AppCompatActivity {
      * @param[in] resultado Objeto ScanResult con la información del dispositivo detectado.
      * @return Valor de la medición.
      ************************************************************/
-    private double getMedicionsBeacon (ScanResult resultado) {
+    public double getMedicionsBeacon(ScanResult resultado) {
         byte[] bytes = resultado.getScanRecord().getBytes();
         TramaIBeacon tib = new TramaIBeacon(bytes);
         return Utilidades.bytesToInt(tib.getMinor());
