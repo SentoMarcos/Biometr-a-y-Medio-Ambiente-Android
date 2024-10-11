@@ -20,7 +20,7 @@ public class RetrofitClient {
      * @var retrofit
      * @brief Instancia única de Retrofit, utilizada para realizar las solicitudes a la API.
      *******************************************/
-    private static Retrofit retrofit = null;
+    public static Retrofit retrofit = null;
 
     /********************************************************
      * @fn ApiService getApiService()
